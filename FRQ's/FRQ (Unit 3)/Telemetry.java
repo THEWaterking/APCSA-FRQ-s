@@ -1,4 +1,4 @@
-@SuppressWarnings("unused")
+
 public class Telemetry {
     public static double maxEnergy;
     private String hardwareID;
@@ -36,22 +36,6 @@ public class Telemetry {
             signalLost = true;
         }
     }
-}
-
-class Flight {
-    private double velocity;
-
-    public void applyDrag(double localAirDensity) {
-        // placeholder implementation
     }
-
-    public double calcKin() {
-        return 0;
-    }
-
-    public double getVelocity() {
-        return velocity;
-    }
-}
 
 
