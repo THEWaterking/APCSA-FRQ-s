@@ -27,7 +27,7 @@ public class Flight {
         //this.airDensity = airDensity;
         double DF = 0.5 * dragCo *airDensity*Math.pow(velocity,2);
         double deAlc = DF / mass;
-        velocity -= deAlc;
+        velocity -= deAlc * 0.05;
         if (velocity <=0.0){
             velocity = 0.0;
         }
